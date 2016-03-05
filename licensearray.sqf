@@ -19,11 +19,11 @@ INV_Licenses =
         ["automatic",[pmcatm,licenseflag2,licenseflag2,licenseflag2,pmcatm],"Assault Weapon License",300000],
 		["engineer",[atmtnpnc,atmtnpsc,licenseflag3,pmcatm,southlicense1,atm5,university],localize "STRS_license_engineer",65000],
         ["bomb",[atmtnpnc,atmtnpsc,airshop3,atm5,terrorshop,terrorshop],"Combat Training",350000],
-        ["probator",[copbank,copbank,copbank,copbank,copbank],localize "STRS_license_probator",10000],
-        ["patrol_training",[atmtnpnc,atmtnpsc,copbank,copbank,copbank,copbank,copbank],localize "STRS_license_coppatrol",150000],
-        ["response_training",[copbank,copbank,copbank,copbank,copbank],localize "STRS_license_copresponse",350000],
-        ["sobr_training",[copbank,copbank,copbank,copbank,copbank],localize "STRS_license_copswat",800000],
-        ["air_support_training",[copbank,copbank,copbank,copbank,copbank],localize "STRS_license_copairsupport",525000],
+        ["probator",[atmtnpnc,atmtnpsc,CopBank,CopBank,CopBank,CopBank,CopBank],localize "STRS_license_probator",10000],
+        ["patrol_training",[atmtnpnc,atmtnpsc,CopBank,CopBank,CopBank,CopBank,CopBank],localize "STRS_license_coppatrol",150000],
+        ["response_training",[atmtnpnc,atmtnpsc,CopBank,CopBank,CopBank,CopBank,CopBank],localize "STRS_license_copresponse",350000],
+        ["sobr_training",[atmtnpnc,atmtnpsc,CopBank,CopBank,CopBank,CopBank,CopBank],localize "STRS_license_copswat",800000],
+        ["air_support_training",[atmtnpnc,atmtnpsc,CopBank,CopBank,CopBank,CopBank,CopBank],localize "STRS_license_copairsupport",525000],
         ["passport_civilian",[licenseflag3,licenseflag3,licenseflag5,licenseflag5,licenseflag5],"Takistani Passport",35000],
         ["pmc_license_journeyman",[safelicense,safelicense,safelicense,safelicense,safelicense],"PMC Journeyman License",1500000],
         ["pmc_license_defense",[pmcatm,pmcatm,pmcatm,pmcatm,pmcatm],"PMC Defense License",350000],
@@ -47,9 +47,7 @@ INV_Licenses =
 		["highcaliberrifle",[licenseflag2,licenseflag2,licenseflag2,licenseflag2,licenseflag2],"High Caliber Rifle License",250000],
 		["newslicense",[atmnews,atmnews,atmnews,atmnews,atmnews],"News Reporters License",1500000],
 		["hitman",[safelicense,safelicense,safelicense,safelicense,safelicense],"Hitman License",500000],
-		["tnplicense",[safelicense,safelicense,safelicense,safelicense,safelicense],"TNP License",999999999],
 		["terrorlicense",[safelicense,safelicense,safelicense,safelicense,safelicense],"Terrorist License",999999999]
-        //["assassin",[agunshop,agunshop,safelicense,safelicense],"Assassin Training",30000]
     ];
 
 ["INV_LicenseOwner", []] call stats_init_variable;

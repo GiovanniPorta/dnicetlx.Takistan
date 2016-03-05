@@ -344,14 +344,12 @@ bases_check_teleport_message = 4;
 bases_checks = [
 	["ispmc", "pmc_area_1", 20, "telehesnotpmc", "You were teleported out of the PMC base!"],
 	["isterror", "terror_area_1", 20, "telenotterrorciv", "You were teleported out of the terrorists' hideout!"],
-	["istnp", "tnp_area_n", 20, "telehesnottnpn", "You were teleported out of the TNP station!"],
-	["istnp", "tnp_area_s", 20, "telehesnottnps", "You were teleported out of the TNP station!"],
+	["istnp", "tnp_area_n", 20, "telehesnottnpn", "You were teleported out of the N-TNP station!"],
+	["istnp", "tnp_area_s", 20, "telehesnottnps", "You were teleported out of the S-TNP station!"],
 	["isopf", "opfor_area_1", 20, "telehesnottla", "You were teleported out of the TLA base!"],
-	["iscop", "blufor_area_1", 20, "telehesnotcop", "You were teleported out of the Police base!"]	
+	["iscop", "blufor_area_1", 20, "telehesnotcop", "You were teleported out of the Blufor base!"]
 ];
-if(!isciv) then {
-	(bases_checks select 3) set [1, "blufor_area_2"];
-};
+
 check_bases = {
 	private["_vehicle"];
 	_vehicle = vehicle player;
@@ -371,6 +369,7 @@ check_bases = {
 		_altitude = (getPosATL _vehicle) select 2;
 		
 		if (_vehicle in (list _trigger_area) && (_altitude < _teleport_height) && not(_faction_bool)) exitWith {
+			player sideChat format["%1", list vehicle player];
 			_vehicle setVelocity [0,0,0];
 			_vehicle setPos (getMarkerPos _teleport_marker);
 			player groupChat _teleport_message;

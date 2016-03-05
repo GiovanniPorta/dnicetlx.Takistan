@@ -329,3 +329,9 @@ if((getPlayerUID player) in wolflicense) then {
 	INV_LicenseOwner = INV_LicenseOwner + ["wolflicense"];
 	server globalchat "Wolfgang License Added";
 };
+
+if (isdog) then {
+	removeAllWeapons player;
+	player addWeapon "ItemMap";
+	[player, "Pastor", false] spawn C_change;
+};

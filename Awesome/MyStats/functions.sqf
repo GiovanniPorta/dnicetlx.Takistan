@@ -186,8 +186,8 @@ stats_human_side = {
 	
 	if (_ch1 == ASCII_P && _ch2 == ASCII_F) exitWith { east};
 	if (_ch1 == ASCII_I && _ch2 == ASCII_V) exitWith { civilian };
-	if (_ch1 == ASCII_N && _ch2 == ASCII_S) exitWith { resistance };
-	if (_ch1 == ASCII_O && _ch2 == ASCII_P) exitWith { west };
+	//if (_ch1 == ASCII_N && _ch2 == ASCII_S) exitWith { resistance };
+	if (_ch1 == ASCII_L && _ch2 == ASCII_U) exitWith { west };
 	
 	 sideUnknown
 };

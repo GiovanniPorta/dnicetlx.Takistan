@@ -2,7 +2,7 @@ if(A_running) exitwith {};
 A_running = true;
 
 _role = Player;
-if (role == Cop5) then {
+if (isdog) then {
 	_role RemoveAction lexisgreat;
 	_role RemoveAction lexisgreat2;
 	_role RemoveAction lexisgreat3;

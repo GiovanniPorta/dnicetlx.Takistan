@@ -2515,10 +2515,10 @@ INV_ItemShops_License = 6;
 
 //note that the object (first element) must be unique to each shop, as this is used for caching shop data
 INV_ItemShops = [
-		[vipshop,"VIP supporter Shop",vipshopbox,dummyobj,_vipshop,_vipshop,true],
-		[vipcarshop,"VIP supporter Vehicle Shop",dummyobj, vipshopcarspawn,_vipcarshop,_vipcarshop,true],
-		[vipshop_1,"VIP supporter Shop",vipshopbox_1,dummyobj,_vipshop,_vipshop,true],
-		[vipcarshop_1,"VIP supporter Vehicle Shop",dummyobj, vipshopcarspawn_1,_vipcarshop,_vipcarshop,true],
+		[vipshop,"VIP Shop",vipshopbox,dummyobj,_vipshop,_vipshop,true],
+		[vipcarshop,"VIP Vehicle Shop",dummyobj, vipshopcarspawn,_vipcarshop,_vipcarshop,true],
+		[vipshop_1,"VIP Shop",vipshopbox_1,dummyobj,_vipshop,_vipshop,true],
+		[vipcarshop_1,"VIP Vehicle Shop",dummyobj, vipshopcarspawn_1,_vipcarshop,_vipcarshop,true],
 		
 		[newscarshop,"News Reporter Car Shop",dummyobj, newscarspawn,_newsstationcar,_newsstationcar,true],
 		[newsairshop,"News Reporter Air Shop",dummyobj, newsairspawn,_newsstationair,_newsstationair,true],

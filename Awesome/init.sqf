@@ -47,16 +47,7 @@ enableEngineArtillery true;
 
 [player, "isstunned", false] call player_set_bool;
 
-
-opfor_area_1 setTriggerActivation ["VEHICLE", "PRESENT", true];
-blufor_area_1 setTriggerActivation ["VEHICLE", "PRESENT", true];
-Jail setTriggerActivation ["VEHICLE", "PRESENT", true];
-
-
-opfor_area_1 setTriggerStatements ["this", "", ""];
-blufor_area_1 setTriggerStatements ["this", "", ""];
-Jail setTriggerStatements ["this", "", ""];
-
+{ _x setTriggerActivation ["VEHICLE", "PRESENT", true]; _x setTriggerStatements ["this", "", ""]; } count [opfor_area_1, blufor_area_1, tnp_area_n, tnp_area_s, terror_area_1, Jail];
 
 A_DYNO_OM	= compile (preprocessfilelinenumbers "ca\modules\dyno\data\scripts\objectMapper.sqf");
 A_DYNO_OG	= compile (preprocessfilelinenumbers "ca\modules\dyno\data\scripts\objectGrabber.sqf");

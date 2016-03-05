@@ -2204,6 +2204,8 @@ player_init_arrays = {
 	isBluforRanked = (rolestring in ["un1", "un2", "un3"]);
 	isOpforRanked = (rolestring in ["opf1", "opf2"]);
 	
+	isdog = (rolestring in ["civ36", "civ50"]);
+	
 	isPmcSlot = (rolestring in ["civ59", "civ60", "civ61", "civ62", "civ63", "civ64"]);
 	issupSlot = (rolestring in [""]) || isPmcSlot;
 	isVipSlot = (rolestring in [""]);
