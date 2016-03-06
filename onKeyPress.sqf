@@ -586,7 +586,7 @@ KeyUp_handler = {
 			
 			if(_inVehicle) then
 			{
-				if (iscop or isopf) then
+				if (iscop or isopf or istnp) then
 				{
 					_handled = [] call keyboard_cop_siren_handler;
 				}
